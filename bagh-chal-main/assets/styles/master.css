@@ -1,0 +1,315 @@
+html,
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #000;
+  background: #fff;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Reset */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------------------------ ------------------------------------ ------------------------------------
+ *                                                      Misc.
+ * ------------------------------------ ------------------------------------ ------------------------------------ */
+
+h1,
+h2,
+h3,
+h4,
+ul {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.container,
+.container-game {
+  /* Width of body on page, with max-width to prevent body
+		becoming to wide on page */
+  width: 90%;
+  max-width: 896px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.container-game {
+  height: 90%;
+  max-height: 896px;
+}
+.container-game > canvas {
+  border: 1px solid #000;
+}
+
+.padding-x-large {
+  padding: 128px 0;
+}
+.padding-large {
+  padding: 96px 0;
+}
+.padding {
+  padding: 64px 0;
+}
+.padding-small {
+  padding: 32px 0;
+}
+.padding-x-small {
+  padding: 16px 0;
+}
+.padding-x2-small {
+  padding: 8px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+.relative {
+  position: relative;
+}
+.bold {
+  font-weight: bold;
+}
+.left-float {
+  float: left;
+}
+.right-float {
+  float: right;
+}
+.text-align-left {
+  text-align: left;
+}
+.text-align-right {
+  text-align: right;
+}
+.link {
+  /* Remove default text stylings such as text underlines */
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.transition {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.margin-top-16px {
+  margin-top: 16px;
+}
+.margin-top-32px {
+  margin-top: 32px;
+}
+.margin-top-48px {
+  margin-top: 48px;
+}
+.margin-top-64px {
+  margin-top: 64px;
+}
+.margin-bottom-16px {
+  margin-bottom: 16px;
+}
+.margin-bottom-32px {
+  margin-bottom: 32px;
+}
+.margin-bottom-48px {
+  margin-bottom: 48px;
+}
+.margin-bottom-64px {
+  margin-bottom: 64px;
+}
+
+/* ------------------------------------ ------------------------------------ ------------------------------------
+ *                                                      Header
+ * ------------------------------------ ------------------------------------ ------------------------------------ */
+
+header {
+  background-color: #1e1e1e;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 48px;
+  text-align: left;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 0 2px #000;
+}
+header > div > a {
+  font-size: 20px;
+  line-height: 48px;
+}
+
+/* ------------------------------------ ------------------------------------ ------------------------------------
+ *                                                       Body
+ * ------------------------------------ ------------------------------------ ------------------------------------ */
+
+main {
+  margin-top: 48px;
+  position: relative;
+}
+#bagh-chal {
+  position: relative;
+}
+#bagh-chal #game {
+  border: 1px solid #000;
+}
+#bagh-chal #handler {
+  display: inline-block;
+  vertical-align: top;
+  margin: 8px;
+}
+#bagh-chal div:not(:first-child) {
+  margin-top: 16px;
+}
+#bagh-chal div > * {
+  display: block;
+  width: 100%;
+  margin-bottom: 4px;
+}
+#bagh-chal h3:not(:first-child),
+#bagh-chal h4:not(:first-child) {
+  margin-top: 16px;
+}
+#bagh-chal h3,
+#bagh-chal h4 {
+  font-weight: bold;
+}
+#bagh-chal select,
+#bagh-chal button {
+  padding: 2px;
+  margin-bottom: 8px;
+}
+#bagh-chal input[type='range'] {
+  margin-top: 4px;
+  display: block;
+  width: 100%;
+}
+#bagh-chal .hidden {
+  display: none;
+}
+#bagh-chal .disabled {
+  pointer-events: none;
+  border: 1px solid #666;
+  background-color: #ccc;
+}
+#bagh-chal span > p {
+  display: inline-block;
+}
+#bagh-chal span > p:nth-child(2) {
+  margin-left: 8px;
+  padding: 0 4px;
+}
+#bagh-chal .running {
+  background-color: #c1e6d0;
+}
+#bagh-chal .draw {
+  background-color: #ffd5b9;
+}
+#bagh-chal .goat {
+  background-color: #ffbbbb;
+}
+#bagh-chal .tiger {
+  background-color: #dadada;
+}
+#bagh-chal .paused {
+  background-color: #bdd2ff;
+}
+
+/* ------------------------------------ ------------------------------------ ------------------------------------
+ *                                                     Footer
+ * ------------------------------------ ------------------------------------ ------------------------------------ */
+
+footer {
+  text-align: center;
+}
+
+/* Copyright */
+.copyright {
+  display: block;
+  font-size: 80%;
+  padding: 12px;
+  color: #555;
+}
+.love {
+  vertical-align: middle;
+  height: 20px;
+  animation: 2s infinite heart-beat;
+}
+@keyframes heart-beat {
+  30% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+/* ------------------------------------ ------------------------------------ ------------------------------------
+ *                                                  Responsiveness
+ * ------------------------------------ ------------------------------------ ------------------------------------ */
+
+@media screen and (max-width: 512px) {
+  /* Because screen is already small, set width to 100% of
+		its wrapper to prevent them displaying too small within the smaller screen */
+  .container {
+    width: 100%;
+  }
+  /* Add a horizontal padding to stop body directly touching the
+		edge of the screen */
+  .padding-x-large {
+    padding: 96px 8px;
+  }
+  .padding-large {
+    padding: 64px 8px;
+  }
+  .padding {
+    padding: 32px 8px;
+  }
+  .padding-small {
+    padding: 32px 8px;
+  }
+  .padding-x-small {
+    padding: 16px 8px;
+  }
+  .padding-x2-small {
+    padding: 8px 8px;
+  }
+
+  header > div > a {
+    padding-left: 8px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}

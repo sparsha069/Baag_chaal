@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Bagh Chal</title>
+
+  <!-- Metadata -->
+  <meta charset="utf-8" />
+  <meta content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"
+        name="viewport" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+
+  <!-- Icon -->
+  <link href="assets/favicons/apple-touch-icon.png"
+        rel="apple-touch-icon"
+        sizes="180x180" />
+  <link href="assets/favicons/favicon-32x32.png"
+        rel="icon"
+        sizes="32x32"
+        type="image/png" />
+  <link href="assets/favicons/favicon-16x16.png"
+        rel="icon"
+        sizes="16x16"
+        type="image/png" />
+  <link href="assets/favicons/site.webmanifest" rel="manifest" />
+  <link href="assets/favicons/safari-pinned-tab.svg" rel="mask-icon" />
+  <link href="assets/favicons/favicon.ico" rel="shortcut icon" />
+  <meta content="#f2f2f2" name="msapplication-TileColor" />
+  <meta content="assets/favicons/browserconfig.xml"
+        name="msapplication-config" />
+  <meta content="#ffffff" name="theme-color" />
+
+  <!-- Get Normalize CSS -->
+  <link href="assets/styles/normalize.min.css"
+        media="all"
+        rel="stylesheet"
+        type="text/css" />
+  <!-- Get Master CSS -->
+  <link href="assets/styles/master.css"
+        media="all"
+        rel="stylesheet"
+        type="text/css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a class="link transition" href="index.html">Bagh Chal</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-game padding-x-small">
+      <h1 class="text-align-left">Implementation of Bagh Chal</h1>
+      <p class="text-align-left margin-bottom-16px">
+        Artificial Intelligence utilising Minimax, α-β-Pruning and MCTS algorithm principles (Made in P5.js).
+      </p>
+      <div id="bagh-chal"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p class="copyright">
+      Made with
+      <svg class="love" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <title>Love</title>
+        <path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021C19.784 3.01 22 4.319 22 7.192c0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13C2 4.516 3.965 2.999 6.28 3zm.001-2C3.098 1 0 3.187 0 7.192 0 11.853 5.57 16.619 12 23c6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238C10.715 2.042 8.478 1 6.281 1z"
+              fill="#ff2b2b" />
+        
+      </svg> by
+      <a class="link transition" href="index.html">Paulo Jorge</a> &copy; 2019.
+    </p>
+  </footer>
+
+  <!-- Get JQuery -->
+  <script src="assets/scripts/libraries/jquery-3.2.1.min.js"></script>
+  <!-- Get P5 W/Addon Libraries -->
+  <script src="assets/scripts/libraries/p5.min.js"></script>
+  <script src="assets/scripts/libraries/p5.dom.min.js"></script>
+  <script src="assets/scripts/piece.js"></script>
+  <script src="assets/scripts/board.js"></script>
+  <script src="assets/scripts/engine.js"></script>
+  <script src="assets/scripts/game.js"></script>
+  <script src="assets/scripts/sketch.js"></script>
+</body>
+</html>
